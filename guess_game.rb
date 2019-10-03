@@ -44,12 +44,10 @@ def set_attempts_amount
   max_number <= 10 ? 2 : 10
 end
 
-
 def start_game
   target_number = generate_target_number
   attempts_amount = set_attempts_amount
 
-  
   while attempts_amount > 0 do
     p "#{attempts_amount} attempts left" if attempts_amount != 10 && attempts_amount != 2
 
